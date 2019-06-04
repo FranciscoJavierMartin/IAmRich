@@ -36,6 +36,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		604D34AF22A6F1890012FE3B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				605537D122A6E71000EBB668 /* Main.storyboard */,
+				605537D622A6E71200EBB668 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		604D34B022A6F19A0012FE3B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				605537CF22A6E71000EBB668 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		605537C122A6E71000EBB668 = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +73,10 @@
 		605537CC22A6E71000EBB668 /* IAmRich */ = {
 			isa = PBXGroup;
 			children = (
+				604D34B022A6F19A0012FE3B /* Controller */,
+				604D34AF22A6F1890012FE3B /* Storyboard */,
 				605537CD22A6E71000EBB668 /* AppDelegate.swift */,
-				605537CF22A6E71000EBB668 /* ViewController.swift */,
-				605537D122A6E71000EBB668 /* Main.storyboard */,
 				605537D422A6E71200EBB668 /* Assets.xcassets */,
-				605537D622A6E71200EBB668 /* LaunchScreen.storyboard */,
 				605537D922A6E71200EBB668 /* Info.plist */,
 			);
 			path = IAmRich;
