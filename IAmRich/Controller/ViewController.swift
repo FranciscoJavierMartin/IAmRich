@@ -21,7 +21,25 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
-        self.labelTitle.text = "I am more rich"
+        let message = """
+I am rich,
+I deserve it.
+I am good,
+healthy and successful
+"""
+        let controller = UIAlertController(title: "I am rich", message: message, preferredStyle: .actionSheet)
+        
+        let action = UIAlertAction(title: "Ok", style: .default, handler: { _ in
+            print("Accept button pressed")
+        })
+        controller.addAction(action)
+        
+        let actionCancel = UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in
+            print("Cancel button pressed")
+        })
+        controller.addAction(actionCancel)
+        
+        self.show(controller, sender: self)
     }
     
 }
