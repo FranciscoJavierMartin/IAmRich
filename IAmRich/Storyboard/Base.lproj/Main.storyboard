@@ -21,14 +21,41 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diamond" translatesAutoresizingMaskIntoConstraints="NO" id="wtf-W0-nbZ">
                                 <rect key="frame" x="64.5" y="327.5" width="285" height="241"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am rich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MD0-SZ-1TI">
+                                <rect key="frame" x="130.5" y="204" width="153.5" height="52"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="37"/>
+                                <color key="textColor" red="0.66299223899841309" green="0.98757463693618774" blue="0.98956102132797241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUb-S8-2f0">
+                                <rect key="frame" x="122" y="608.5" width="170" height="45"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                <state key="normal" title="Tap and be rich">
+                                    <color key="titleColor" red="0.66299223900000004" green="0.98757463690000002" blue="0.98956102130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YHL-be-Emx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.050696796166058607" green="0.0098433869288803173" blue="0.14351926813471505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wtf-W0-nbZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1DH-6o-RiZ"/>
+                            <constraint firstItem="nUb-S8-2f0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1I4-4t-4Gm"/>
+                            <constraint firstItem="wtf-W0-nbZ" firstAttribute="top" secondItem="MD0-SZ-1TI" secondAttribute="bottom" constant="71.5" id="2wX-Xa-35I"/>
+                            <constraint firstItem="nUb-S8-2f0" firstAttribute="top" secondItem="wtf-W0-nbZ" secondAttribute="bottom" constant="40" id="Htm-Nk-AZ5"/>
                             <constraint firstItem="wtf-W0-nbZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UDi-hL-Vnf"/>
+                            <constraint firstItem="MD0-SZ-1TI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vIp-PY-W1T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonPush" destination="nUb-S8-2f0" id="AnS-iO-tgc"/>
+                        <outlet property="imageViewDiamond" destination="wtf-W0-nbZ" id="nqN-Ww-heE"/>
+                        <outlet property="labelTitle" destination="MD0-SZ-1TI" id="zP5-ps-Qg0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

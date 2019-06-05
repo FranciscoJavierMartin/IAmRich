@@ -10,11 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var imageViewDiamond: UIImageView!
+    @IBOutlet weak var buttonPush: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        print("Button pressed")
+    }
+    
 }
 
